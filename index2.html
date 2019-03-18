@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body id="bod">
+    <input id="input" type="text">
+    <div id="map"></div>
+
+    <div class="row">
+        <div class="col-sm-2>">
+
+            <form action="" method="get">
+                <button type="button" class="btn btn-primary" form="nasaSubmit" value="Submit" id="nasaSubmit">nasa</button>
+
+                <div> <input type="text" class="form-control" placeholder="athlete" id="nasaform" name="athleteform"><br>
+                </div>
+            </form>
+        </div>
+        <b>API URL:</b>
+        <pre id="reqObject"></pre>
+
+
+        <img id="apod_img_id" width="250px" />
+
+        <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+        <p id="copyright"></p>
+
+        <h3 id="apod_title"></h3>
+        <p id="apod_explaination"></p>
+        <br />
+        <b>Return Object:</b>
+        <pre id="returnObject"></pre>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANf282TEzyB8gxc8xAi-wsvEMWfdk6ne0&libraries=places&callback=initMap"
+            async defer></script>
+        <script src="nasa.js"></script>
+
+</body>
+
+</html>

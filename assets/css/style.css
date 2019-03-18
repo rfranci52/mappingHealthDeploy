@@ -1,0 +1,165 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #FFDB59
+}
+
+h1{
+  font-size: 2em;  
+  color: yellow;
+    margin-top:2%;
+    border-style: dashed;
+    border-width: 8px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    border-bottom: none;
+    border-left: none;
+    
+    
+    
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+h6{
+  margin-top:-34px;
+  border-style: dashed;
+  border-width: 2px;
+  padding-left: 8px;
+  padding-bottom:12px;
+  color: red;
+  border-bottom: none;
+  border-right: none;
+  
+  
+
+}
+
+p{
+  color: white;
+  margin-top:20px
+  
+   
+    
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+  }
+
+#destinationContainer{
+    margin: 20px;
+  }
+
+#selectAPI {
+  position: relative;
+  z-index: 2;
+  max-width: 300px;
+  max-height: 700px;
+  overflow: auto;
+}
+
+#selectAPI .api {
+  display: flex;
+  justify-content: space-between;
+}
+
+#selectAPI .api:first-of-type {
+  margin-top: 81px;
+}
+
+#selectAPI.hide {
+  display: none;
+}
+
+#menuToggle{
+text-align:left;
+font-size: 13px;
+  
+  
+
+
+  
+}
+button{
+    
+  margin: 1.1px;
+    /* display: inline; */
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    font-size:14px;
+    color: white;
+    margin-right: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: right;
+    /* float: right; */
+  }
+
+  input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    box-shadow: 0 0 0 30px white inset !important;
+    border-style: none;
+    
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
+}
+
+
+button:focus {outline:0;}
+input:focus {outline:0;}
+
+button:hover { 
+  border-color: yellow;
+  background-color:rgba(0, 0, 0, 0.9);
+}
+
+  .navbar{
+    /* background-image: url("trans-black-60.png"); */
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    border-bottom-color: yellow;
+    border-bottom-width: 2px; 
+    border-bottom-style: solid;
+    z-index:1;
+    background-color: rgba(0,0,0,.4);
+    background-image : linear-gradient(to right, 
+    rgba(255,255,255, 0), 
+    rgba(255,219,81, 1) 180%);
+}
+
+#searchNav{
+    position: relative;
+    height: 13%;
+}
+
+
+footer {
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    
+    width: 80%;
+    height: 20px;
+    position: fixed;
+    clear: both;
+    border-style: none;
+    border-top-color:none; 
+    border-top-width: 2px; 
+ 
+    font-size: 12px;
+
+  } 
